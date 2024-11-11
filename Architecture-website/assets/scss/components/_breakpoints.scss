@@ -1,0 +1,92 @@
+/*=============== BREAKPOINTS ===============*/
+/* For medium devices */
+@media screen and (min-width: 768px){
+   .nav__menu{
+      width: 50%;
+   }
+}
+
+/* For large devices */
+@media screen and (min-width: 1150px){
+   .container{
+      margin-inline: auto;
+   }
+
+   .nav{
+      height: calc(var(--header-height) + 2rem);
+
+      &__toggle,
+      &__close{
+         display: none;
+      }
+      &__menu{
+         width: initial;
+      }
+      &__list{
+         flex-direction: row;
+         column-gap: 4rem;
+      }
+   }
+
+   .home{
+      &__data{
+         text-align: initial;
+      }
+      &__subtitle{
+         margin-bottom: 1rem;
+      }
+      &__title{
+         margin-bottom: 4.5rem;
+      }
+      &__content{
+         max-width: 1120px;
+         margin-inline: auto;
+         left: 0;
+         right: 0;
+      }
+      &__social{
+         left: 0;
+      }
+   }
+
+   .swiper-pagination{
+      top: 10rem;
+   }
+   .swiper-pagination-total{
+      font-size: 1.5rem;
+   }
+   .swiper-navigation{
+      right: 0;
+      column-gap: 3.5rem;
+   }
+   .swiper-button-prev,
+   .swiper-button-next{
+      font-size: 3rem;
+   }
+}
+
+/* For taller devices */
+@media screen and (min-width: 800px) and (min-height: 800px) {
+   .home__article{
+      padding-top: 17rem;
+   }
+
+   .swiper-pagination{
+      top: 13rem;
+   }
+}
+
+/* For 2K resolutions (2048 x 1152) */
+@media screen and (min-width: 2048px){
+   .container,
+   .home__content{
+      max-width: 1550px;
+   }
+
+   .home__swiper,
+   .home__content,
+   .home__img,
+   .home__shadow{
+      max-height: 1000px;
+   }
+}
