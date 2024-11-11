@@ -1,0 +1,23 @@
+/*=============== BUTTON ===============*/
+.button{
+   display: inline-block;
+   background-color: var(--first-color);
+   color: #fff;
+   font-weight: var(--font-bold);
+   padding: 1.125rem 2rem;
+   border-radius: .75rem;
+   box-shadow: 0 4px 24px hsla(0, 0%, 0%, .2);
+   transition: background-color .4s;
+
+   &:hover{
+      background-color: var(--first-color-alt);
+   }
+
+   &__dark{
+      background-color: var(--first-color-dark);
+
+      &:hover{
+         background-color: var(--first-color-darker);
+      }
+   }
+}
