@@ -1,0 +1,76 @@
+/*=============== HEADER & NAV ===============*/
+.header{
+   position: fixed;
+   width: 100%;
+   top: 0;
+   left: 0;
+   background-color: transparent;
+   z-index: var(--z-fixed);
+   transition: background-color .3s, box-shadow .3s;
+}
+
+.nav{
+   position: relative;
+   height: var(--header-height);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   &__logo{
+      color: var(--black-color);
+      font-weight: var(--font-semi-bold);
+   }
+   &__close,
+   &__toggle,
+   &__actions{
+      display: flex;
+      font-size: 1.25rem;
+      cursor: pointer;
+   }
+   &__actions{
+      column-gap: .5rem;
+   }
+   // Navigation for mobile devices
+   &__menu{
+      @media screen and (max-width: 1150px){
+         position: fixed;
+         top: 0;
+         right: -100%;
+         background-color: var(--first-color);
+         width: 80%;
+         height: 100%;
+         box-shadow: -2px 0 12px hsla(0, 0%, 0%, .2);
+         padding: 6rem 3rem 0;
+         transition: right .4s;
+      }
+   }
+   &__list{
+      display: flex;
+      flex-direction: column;
+      row-gap: 3rem;
+   }
+   &__link{
+      color: var(--black-color);
+      font-weight: var(--font-semi-bold);
+
+      &:hover{
+         text-decoration: underline;
+      }
+   }
+   &__close{
+      position: absolute;
+      top: 1.15rem;
+      right: 1.5rem;
+   }
+}
+
+/* Show menu */
+.show-menu{
+   right: 0;
+}
+
+/* Background header */
+.bg-header{
+   background-color: var(--first-color);
+   box-shadow: 0 2px 16px hsla(0, 0%, 0%, .1);
+}
