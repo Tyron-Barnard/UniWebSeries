@@ -1,0 +1,16 @@
+/*=============== ABOUT ===============*/
+.about{
+   &__container{
+      row-gap: 3.5rem;
+   }
+   &__data{
+      text-align: center;
+   }
+   &__description{
+      margin-bottom: 2.5rem;
+   }
+   &__img{
+      width: 280px;
+      justify-self: center;
+   }
+}

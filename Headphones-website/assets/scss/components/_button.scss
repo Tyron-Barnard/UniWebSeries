@@ -1,0 +1,22 @@
+/*=============== BUTTON ===============*/
+.button{
+   background: var(--gradient-color);
+   padding: .75rem 1.5rem;
+   border-radius: 4rem;
+   color: var(--white-color);
+   font-weight: var(--font-semi-bold);
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   column-gap: .5rem;
+   transition: box-shadow .4s;
+
+   & i{
+      font-size: 2rem;
+      font-weight: initial;
+      color: var(--first-color);
+   }
+   &:hover{
+      box-shadow: 0 12px 32px hsla(23, 100%, 50%, .12);
+   }
+}

@@ -1,0 +1,84 @@
+/*=============== FOOTER ===============*/
+.footer{
+   padding-block: 2rem;
+   overflow: hidden;
+
+   &__container{
+      row-gap: 4rem;
+   }
+   &__logo{
+      font-size: var(--h2-font-size);
+      font-weight: var(--font-semi-bold);
+      color: var(--first-color);
+   }
+   &__data{
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 4rem;
+   }
+   &__title{
+      font-size: var(--h3-font-size);
+      margin-bottom: 1rem;
+   }
+   &__links{
+      display: grid;
+      row-gap: .75rem;
+   }
+   &__link{
+      color: var(--text-color);
+      transition: color .4s;
+
+      &:hover{
+         color: var(--first-color);
+      }
+   }
+   &__group{
+      grid-column: 1 / 3;
+   }
+   &__form{
+      display: grid;
+      row-gap: 1rem;
+      margin-bottom: 2rem;
+   }
+   &__input,
+   &__button{
+      font-size: var(--normal-font-size);
+      font-family: var(--body-cont);
+      border: none;
+      outline: none;
+   }
+   &__input{
+      width: 100%;
+      padding: 1.15rem 1.25rem;
+      border-radius: 4rem;
+      background-color: var(--container-color);
+      color: var(--text-color);
+
+      &::placeholder{
+         color: var(--text-color);
+      }
+   }
+   &__button{
+      cursor: pointer;
+   }
+   &__social{
+      display: flex;
+      justify-content: center;
+      column-gap: 1rem;
+
+      &-link{
+         color: var(--white-color);
+         font-size: 1.25rem;
+         transition: color .4s;
+
+         &:hover{
+            color: var(--first-color);
+         }
+      }
+   }
+   &__copy{
+      display: block;
+      margin-top: 5rem;
+      font-size: var(--small-font-size);
+      text-align: center;
+   }
+}
