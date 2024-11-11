@@ -10,7 +10,7 @@ A futuristic landing page for an NFT marketplace, designed to showcase digital a
 - Sleek and modern design to appeal to digital art enthusiasts
 
 ## Live Demo
-[Visit the NFT Website](https://yourwebsite.com)
+[Visit the NFT Website](https://animated-croquembouche-6b1238.netlify.app/)
 
 ## How to View Locally
 1. Clone this repository and navigate to the `NFT-website` folder.
