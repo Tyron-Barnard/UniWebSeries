@@ -1,0 +1,11 @@
+/*=============== LOGOS ===============*/
+.logos{
+    &__container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        justify-items: center;
+    }
+    &__img{
+        width: 120px;
+    }
+}

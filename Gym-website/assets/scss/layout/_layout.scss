@@ -1,0 +1,57 @@
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container{
+    max-width: 1124px;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+.section{
+    padding: 4.5rem 0 2rem;
+
+    &__data{
+        display: flex;
+        flex-direction: column;
+        row-gap: .75rem;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    &__title,
+    &__title-border{
+        font-size: var(--big-font-size);
+        letter-spacing: 1.5px;
+    }
+    &__subtitle{
+        font-size: var(--h2-font-size);
+        font-family: var(--second-font);
+        font-weight: 400;
+        letter-spacing: 1.5px;
+        color: var(--first-color);
+        transform: rotate(-2deg);
+    }
+    &__titles{
+        display: flex;
+        column-gap: .75rem;
+        justify-content: center;
+    }
+    &__title-border{
+        -webkit-text-stroke: 1px var(--text-color);
+        color: transparent;
+    }
+}
+
+.grid{
+    display: grid;
+    gap: 1.5rem;
+}
+
+.main{
+    overflow: hidden; /* For animation ScrollReveal */
+}
+
+.color-red{
+    color: hsl(0, 80%, 64%);
+}
+
+.color-green{
+    color: var(--first-color);
+}

@@ -1,0 +1,56 @@
+/*=============== HOME ===============*/
+.home{
+    position: relative;
+    padding-bottom: 0;
+
+    &__container{
+        padding-top: 4rem;
+        row-gap: 3rem;
+    }
+    &__data{
+        text-align: center;
+    }
+    &__subtitle{
+        font-size: var(--bigger-font-size);
+        -webkit-text-stroke: 1px var(--title-color);
+        color: transparent;
+    }
+    &__title{
+        font-size: var(--biggest-font-size);
+        font-weight: var(--font-black);
+        margin: .5rem 0;
+    }
+    &__subtitle,
+    &__title{
+        letter-spacing: 1.5px;
+    }
+    &__description{
+        margin-bottom: 2.5rem;
+    }
+    &__triangle{
+        height: 325px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        clip-path: polygon(100% 0, 0 100%, 100% 100%);
+    }
+    &__triangle-1{
+        width: 105px;
+        background-color: var(--first-color);
+    }
+    &__triangle-2{
+        width: 205px;
+        background-color: var(--first-color-alt);
+    }
+    &__triangle-3{
+        width: 305px;
+        background-color: var(--first-color-dark);
+    }
+    &__img{
+        display: block;
+        position: relative;
+        z-index: 1;
+        width: 350px;
+        margin: 0 auto;
+    }
+}

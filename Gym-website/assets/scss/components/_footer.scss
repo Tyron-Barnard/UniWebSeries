@@ -1,0 +1,94 @@
+/*=============== FOOTER ===============*/
+.footer{
+    &__container{
+        row-gap: 4rem;
+        padding-top: 1rem;
+    }
+    &__logo,
+    &__description{
+        color: var(--title-color);
+    }
+    &__logo,
+    &__form,
+    &__social{
+        display: flex;
+    }
+    &__logo{
+        & img{
+            width: 1.5rem;
+        }
+
+        align-items: center;
+        column-gap: .5rem;
+        font-weight: var(--font-bold);
+        margin-bottom: 1.5rem;
+    }
+    &__description{
+        margin-bottom: 2rem;
+    }
+    &__form{
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+    &__input{
+        padding: 20px 56px 20px 24px;
+        border: 2px solid var(--first-color-light);
+        background: transparent;
+        color: var(--text-color);
+        outline: none;
+    }
+    &__content,
+    &__links,
+    &__group{
+        display: grid;
+    }
+    &__content{
+        grid-template-columns: repeat(2, max-content);
+        gap: 2.5rem 3.5rem;
+    }
+    &__title{
+        font-size: var(--h3-font-size);
+        margin-bottom: 1.5rem;
+    }
+    &__links{
+        row-gap: .75rem;
+    }
+    &__link{
+        color: var(--text-color);
+        transition: color .3s;
+
+        &:hover{
+            color: var(--first-color);
+        }
+    }
+    &__group{
+        margin-top: 5rem;
+        justify-items: center;
+        row-gap: 2rem;
+    }
+    &__social{
+        column-gap: 1.25rem;
+
+        &-link{
+            display: inline-flex;
+            padding: .35rem;
+            background-color: var(--first-color);
+            border-radius: 50%;
+            font-size: 1.25rem;
+            color: var(--title-color-black);
+            transition: background .4s;
+
+            &:hover{
+                background-color: var(--first-color-dark);
+            }
+        }
+    }
+    &__copy{
+        font-size: var(--smaller-font-size);
+        color: var(--text-color-light);
+    }
+    &__message{
+        position: absolute;
+        transform: translateY(1rem);
+    }
+}
