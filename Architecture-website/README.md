@@ -10,7 +10,7 @@ A sleek and modern landing page for an architecture firm, designed to showcase e
 - Gallery of featured projects with descriptions
 
 ## Live Demo
-[Visit the Architecture Website]([https://yourwebsite.com](https://elaborate-palmier-761756.netlify.app/)
+[Visit the Architecture Website]([https://yourwebsite.com] https://elaborate-palmier-761756.netlify.app/
 
 ## How to View Locally
 1. Clone this repository and navigate to the `Architecture-website` folder.
