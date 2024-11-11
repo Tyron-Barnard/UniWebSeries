@@ -1,0 +1,116 @@
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 340px){
+    .container{
+        margin-inline: 1rem;
+    }
+
+    .home{
+        &__img-eth{
+            width: 80px;
+        }
+        &__img-orbe{
+            width: 230px;
+        }
+        &__data{
+            right: .5rem;
+        }
+        &__footer{
+            flex-direction: column;
+            row-gap: 2rem;
+        }
+    }
+}
+/* For medium devices */
+@media screen and (min-width: 767px){
+    .nav{
+        height: calc(var(--header-height) + 1.5rem);
+
+        &__toggle,
+        &__close,
+        &__img{
+            display: none;
+        }
+        &__list{
+            flex-direction: row;
+            column-gap: 4rem;
+        }
+    }
+
+    .home{
+        &__container{
+            height: 100vh; // If you add more content below the home section, remove this property.
+            display: grid;
+            grid-template-columns: repeat(2, max-content);
+            align-content: center;
+            justify-content: center;
+            gap: 2rem 4rem;
+        }
+        &__group{
+            grid-row: 1 / 3;
+            grid-column: 2 / 3;
+            align-self: center;
+        }
+    }
+}
+
+/* For large devices */
+@media screen and (min-width: 1024px){
+    .home{
+        &__title{
+            margin-bottom: 1rem;
+        }
+        &__description{
+            margin-bottom: 3rem;
+        }
+        &__img-orbe{
+            width: 500px;
+        }
+        &__img-eth{
+            width: 200px;
+        }
+        &__data{
+            top: 3rem;
+            right: 0;
+            row-gap: 2.5rem;
+        }
+        &__shape{
+            &-small,
+            &-big-1,
+            &-big-2{
+                filter: blur(132px);
+            }
+            &-small{
+                width: 300px;
+                height: 300px;
+                top: -5rem;
+                left: -2rem;
+            }
+            &-big-1,
+            &-big-2{
+                width: 400px;
+                height: 400px;
+            }
+            &-big-1{
+                top: 10rem;
+                right: -3.5rem;
+            }
+            &-big-2{
+                left: 14rem;
+                bottom: -10rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1048px){
+    .container{
+        margin-inline: auto;
+    }
+}
+
+@media screen and (min-width: 1500px){
+    .home__shape-big-2{
+        left: 28rem;
+    }
+}
