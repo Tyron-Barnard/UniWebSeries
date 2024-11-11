@@ -1,6 +1,6 @@
 # Car Website
 
-![Uploading screencapture-127-0-0-1-5500-index-html-2024-11-11-16_35_02.png…]()
+![screencapture-127-0-0-1-5500-index-html-2024-11-11-16_35_02](https://github.com/user-attachments/assets/ccb4663d-79ea-4ec3-953f-c4f1c1f03456)
 
 A sleek and stylish landing page for car enthusiasts or dealerships, designed to showcase featured cars and latest models.
 
