@@ -10,7 +10,7 @@ A stylish and energetic landing page for a sneaker brand, designed to showcase p
 - Bold and athletic design to capture the spirit of the Nike brand
 
 ## Live Demo
-[Visit the Nike Shoe Website](https://yourwebsite.com)
+[Visit the Nike Shoe Website](https://profound-biscuit-a0a60d.netlify.app/)
 
 ## How to View Locally
 1. Clone this repository and navigate to the `Nike-shoe-website` folder.
