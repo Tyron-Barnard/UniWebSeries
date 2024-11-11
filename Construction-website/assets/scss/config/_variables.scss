@@ -1,0 +1,55 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+:root{
+   --header-height: 3.5rem;
+
+   /*========== Colors ==========*/
+   /*Color mode HSL(hue, saturation, lightness)*/
+   --first-color: hsl(18, 95%, 55%);
+   --second-color: hsl(42, 98%, 52%);
+   --first-gradient: linear-gradient(90deg,
+                   hsl(18, 95%, 55%),
+                   hsl(18, 98%, 64%));
+   --title-color: hsl(255, 12%, 12%);
+   --text-color: hsl(225, 12%, 24%);
+   --text-color-light: hsl(255, 4%, 70%);
+   --body-color: hsl(0, 0%, 100%);
+   --container-color: hsl(0, 0%, 100%);
+   --white-color: hsl(0, 0%, 100%);
+   --black-color: hsl(255, 20%, 10%);
+   --gray-border: hsl(255, 6%, 90%);
+   --black-border: hsl(255, 10%, 20%);
+
+   /*========== Font and typography ==========*/
+   /*.5rem = 8px | 1rem = 16px ...*/
+   --body-font: "Montserrat", sans-serif;
+
+   --big-font-size: 2.25rem;
+   --h1-font-size: 1.5rem;
+   --h2-font-size: 1.25rem;
+   --h3-font-size: 1rem;
+   --normal-font-size: .938rem;
+   --small-font-size: .813rem;
+
+   // Responsive typography
+   @media screen and (min-width: 1150px){
+      --big-font-size: 3.5rem;
+      --h1-font-size: 2.25rem;
+      --h2-font-size: 1.5rem;
+      --h3-font-size: 1.25rem;
+      --normal-font-size: 1rem;
+      --small-font-size: .875rem;
+   }
+
+	/*========== Font weight ==========*/
+   --font-regular: 400;
+   --font-medium: 500;
+   --font-semi-bold: 600;
+   --font-bold: 700;
+
+	/*========== z index ==========*/
+   --z-tooltip: 10;
+   --z-fixed: 100;
+}

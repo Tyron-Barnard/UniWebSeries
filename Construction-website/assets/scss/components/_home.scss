@@ -1,0 +1,73 @@
+/*=============== HOME ===============*/
+.home{
+   position: relative;
+   background-color: var(--black-color);
+
+   &__container{
+      position: relative;
+      row-gap: 3rem;
+      padding-block: 2.5rem 6rem;
+   }
+   &__content{
+      row-gap: 2.5rem;
+   }
+   &__data{
+      text-align: center;
+   }
+   &__title{
+      color: var(--white-color);
+      font-size: var(--big-font-size);
+      font-weight: var(--font-bold);
+      margin-bottom: 1rem;
+   }
+   &__description{
+      margin-bottom: 2.5rem;
+      color: var(--text-color-light);
+   }
+   &__buttons{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+   }
+   &__info{
+      display: flex;
+      justify-content: center;
+      column-gap: 4.5rem;
+
+      &-title{
+         color: var(--second-color);
+         font-size: var(--big-font-size);
+         font-weight: var(--font-bold);
+         margin-bottom: .5rem;
+      }
+      &-description{
+         font-size: var(--small-font-size);
+         color: var(--white-color);
+      }
+   }
+   &__images{
+      position: relative;
+      justify-self: center;
+   }
+   &__img-1{
+      width: 250px;
+      margin-left: 3.5rem;
+   }
+   &__img-2{
+      width: 150px;
+      border: 5px solid var(--black-color);
+      position: absolute;
+      left: 0;
+      bottom: -3.5rem;
+   }
+   &__lines{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: right;
+   }
+}

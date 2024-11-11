@@ -1,0 +1,45 @@
+/*=============== ABOUT ===============*/
+.about{
+   &__container{
+      row-gap: 8rem;
+   }
+   &__data{
+      text-align: center;
+   }
+   &__description{
+      margin-bottom: 2rem;
+   }
+   &__list{
+      text-align: initial;
+      grid-template-columns: repeat(2, 130px);
+      justify-content: center;
+      gap: 1.5rem;
+      margin-bottom: 2.5rem;
+
+      &-item{
+         display: flex;
+         column-gap: .5rem;
+         color: var(--title-color);
+
+         & i{
+            font-size: 1.25rem;
+            color: var(--first-color);
+         }
+      }
+   }
+   &__images{
+      position: relative;
+      justify-self: center;
+   }
+   &__img-1{
+      width: 200px;
+      border: 5px solid var(--body-color);
+      position: absolute;
+      top: -5rem;
+      left: 6rem;
+   }
+   &__img-2{
+      width: 250px;
+      margin-right: 2.5rem;
+   }
+}

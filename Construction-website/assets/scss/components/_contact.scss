@@ -1,0 +1,60 @@
+/*=============== CONTACT ===============*/
+.contact{
+   &__container{
+      row-gap: 3rem;
+      padding-block: 1.5rem 3rem;
+   }
+   &__img{
+      width: 320px;
+      justify-self: center;
+   }
+   &__data{
+      grid-template-columns: 230px;
+      justify-content: center;
+      row-gap: 1.5rem;
+   }
+   &__card{
+      background-color: var(--container-color);
+      border: 2px solid var(--gray-border);
+      padding: 1.5rem 2rem;
+      text-align: center;
+      transition: border-color .4s;
+
+      &:hover{
+         border-color: var(--first-color);
+      }
+   }
+   &__icon{
+      width: 48px;
+      height: 48px;
+      background-color: var(--black-color);
+      color: var(--white-color);
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      font-size: 2rem;
+      margin: 0 auto 1.25rem;
+   }
+   &__title{
+      font-size: var(--h2-font-size);
+      margin-bottom: .5rem;
+   }
+   &__info{
+      font-style: normal;
+   }
+   &__social{
+      display: flex;
+      justify-content: center;
+      column-gap: 1rem;
+
+      &-link{
+         font-size: 1.5rem;
+         color: var(--first-color);
+         transition: transform .4s;
+
+         &:hover{
+            transform: translateY(-.25rem);
+         }
+      }
+   }
+}

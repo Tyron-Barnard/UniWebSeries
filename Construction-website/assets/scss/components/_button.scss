@@ -1,0 +1,33 @@
+/*=============== BUTTON ===============*/
+.button{
+   display: inline-flex;
+   background: var(--first-gradient);
+   color: var(--white-color);
+   font-weight: var(--font-semi-bold);
+   padding: 1rem 2rem;
+   transition: box-shadow .4s;
+
+   &:hover{
+      box-shadow: 0 8px 32px hsla(18, 95%, 55%, .3);
+      color: var(--white-color);
+   }
+
+   &__link{
+      display: flex;
+      align-items: center;
+      column-gap: .25rem;
+      color: var(--first-color);
+
+      & span{
+         font-weight: var(--font-semi-bold);
+      }
+      & i{
+         font-size: 1.5rem;
+         transition: transform .4s;
+      }
+
+      &:hover i{
+         transform: translateX(.25rem);
+      }
+   }
+}

@@ -1,0 +1,76 @@
+/*=============== FOOTER ===============*/
+.footer{
+   background-color: var(--black-color);
+   color: var(--text-color-light);
+   padding-block: 3.5rem 2rem;
+
+   &__container{
+      row-gap: 4rem;
+      padding-bottom: 4rem;
+      border-bottom: 1px solid var(--black-border);
+   }
+   &__logo{
+      display: inline-flex;
+      align-items: center;
+      column-gap: .25rem;
+
+      & span{
+         color: var(--white-color);
+         font-size: var(--h3-font-size);
+         font-weight: var(--font-semi-bold);
+      }
+      & i{
+         color: var(--first-color);
+         font-size: 1.5rem;
+      }
+   }
+   &__description{
+      margin-block: 1rem;
+   }
+   &__email,
+   &__info{
+      font-style: normal;
+   }
+   &__content{
+      grid-template-columns: repeat(2, max-content);
+      gap: 4rem 3rem;
+   }
+   &__title{
+      font-size: var(--h3-font-size);
+      color: var(--white-color);
+      margin-bottom: 1rem;
+   }
+   &__links,
+   &__list{
+      display: grid;
+      row-gap: .5rem;
+   }
+   &__link{
+      color: var(--text-color-light);
+      transition: color .4s;
+
+      &:hover{
+         color: var(--first-color);
+      }
+   }
+   &__social{
+      display: flex;
+      column-gap: 1rem;
+
+      &-link{
+         font-size: 1.5rem;
+         color: var(--first-color);
+         transition: transform .4s;
+
+         &:hover{
+            transform: translateY(-.25rem);
+         }
+      }
+   }
+   &__copy{
+      display: block;
+      text-align: center;
+      font-size: var(--small-font-size);
+      margin-top: 4rem;
+   }
+}
