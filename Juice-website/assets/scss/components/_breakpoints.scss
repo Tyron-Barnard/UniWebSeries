@@ -1,0 +1,135 @@
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 330px){
+    .container{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .home{
+        &__images{
+            width: 245px;
+            height: 320px;
+        }
+        &__liquid{
+            width: 250px;
+            left: 0;
+        }
+        &__juice{
+            width: 100px;
+        }
+        &__apple1,
+        &__apple2{
+            width: 70px;
+        }
+    }
+}
+
+/* For medium devices */
+@media screen and (min-width: 767px){
+    .nav{
+        height: calc(var(--header-height) + 1.5rem);
+
+        &__toggle,
+        &__close,
+        &__img{
+            display: none;
+        }
+        &__list{
+            flex-direction: row;
+            column-gap: 3rem;
+        }
+    }
+    
+    .home__container{
+        grid-template-columns: repeat(2, max-content);
+        justify-content: center;
+        align-items: center;
+        column-gap: 4rem;
+        padding-top: 4rem;
+    }
+}
+
+/* For large devices */
+@media screen and (min-width: 1024px){
+    .home{
+        &__images{
+            width: 530px;
+            height: 590px;
+        }
+        &__liquid{
+            width: 530px;
+        }
+        &__juice{
+            width: 220px;
+            left: 0;
+            top: 1.5rem
+        }
+        &__apple1{
+            width: 180px;
+            top: 10rem;
+            left: -1rem;
+        }
+        &__apple2{
+            width: 185px;
+            right: .5rem;
+            bottom: 5.5rem;
+        }
+        &__leaf{
+            &:nth-child(1),
+            &:nth-child(6){
+                width: 70px;
+            }
+            &:nth-child(2),
+            &:nth-child(4),
+            &:nth-child(5){
+                width: 60px;
+            }
+
+            // Move sheets into position
+            &:nth-child(1){
+                top: -1rem;
+                right: 2rem;
+            }
+            &:nth-child(2){
+                top: 2.5rem;
+                left: 2.25rem;
+            }
+            &:nth-child(3){
+                width: 40px;
+                top: 12rem;
+                right: 10rem;
+            }
+            &:nth-child(4){
+                bottom: 8rem;
+                left: 4.5rem;
+            }
+            &:nth-child(5){
+                right: 10rem;
+            }
+            &:nth-child(6){
+                bottom: 1rem;
+                left: -8rem;
+            }
+        }
+        &__shape-small{
+            width: 400px;
+            height: 400px;
+            top: 0;
+            left: -15rem;
+        }
+        &__shape-big{
+            width: 500px;
+            height: 500px;
+            top: 22rem;
+            right: -14rem;
+        }
+    }
+}
+
+@media screen and (min-width: 1048px){
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

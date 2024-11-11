@@ -1,0 +1,29 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Lemon&family=Open+Sans:wght@400;600&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+:root{
+    --header-height: 3.5rem;
+
+    /*========== Colors ==========*/
+    /*Color mode HSL(hue, saturation, lightness)*/
+    --first-color: hsl(2, 100%, 61%);
+    --first-color-alt: hsl(2, 89%, 53%);
+    --title-color: hsl(233, 32%, 15%);
+    --text-color: hsl(233, 4%, 35%);
+    --body-color: hsl(2, 100%, 97%);
+
+    /*========== Font and typography ==========*/
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --body-font: 'Open Sans', sans-serif;
+    --second-font: 'Lemon', cursive;
+
+    --biggest-font-size: 2.25rem;
+    --normal-font-size: .938rem;
+
+    // Responsive typography
+    @media screen and (min-width: 1024px){
+        --biggest-font-size: 3.5rem;
+        --normal-font-size: 1rem;
+    }
+}

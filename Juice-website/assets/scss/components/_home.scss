@@ -1,0 +1,163 @@
+/*=============== HOME ===============*/
+.home{
+    position: relative;
+
+    &__container{
+        position: relative;
+        padding-top: 8rem;
+        height: 100vh;
+        display: grid;
+        row-gap: 1rem;
+    }
+
+    &__title{
+        font-size: var(--biggest-font-size);
+        font-family: var(--second-font);
+        color: var(--title-color);
+        margin-bottom: .75rem;
+
+        & span{
+            display: block;
+            color: var(--first-color);
+        }
+    }
+    &__description,
+    &__button{
+        font-weight: 600;
+    }
+    &__description{
+        color: var(--title-color);
+        margin-bottom: 1.5rem;
+    }
+    &__button{
+        display: inline-block;
+        background-color: var(--first-color);
+        color: #fff;
+        padding: 1rem 2rem;
+        border-radius: 1.5rem .25rem;
+        box-shadow: 0 8px 20px hsla(2, 100%, 45%, .28);
+        transition: background .4s;
+
+        &:hover{
+            background-color: var(--first-color-alt);
+        }
+    }
+    &__images{
+        position: relative;
+        width: 325px;
+        height: 378px;
+        justify-self: center;
+
+        & img{
+            position: absolute;
+        }
+    }
+    &__liquid{
+        max-width: initial;
+        width: 340px;
+        left: -.5rem;
+    }
+    &__juice{
+        width: 140px;
+        transform: rotate(15deg);
+        left: 1rem;
+        right: 0;
+        top: 1rem;
+        margin: 0 auto;
+        animation: float-juice 4s ease-in-out infinite;
+    }
+    &__apple2{
+        width: 90px;
+        right: 1.5rem;
+        bottom: 3.5rem;
+    }
+    &__apple1{
+        width: 100px;
+        transform: rotate(-25deg);
+        top: 7rem;
+        left: .65rem;
+    }
+    &__leaf{
+        &:nth-child(1),
+        &:nth-child(6){
+            width: 50px;
+            transform: rotate(30deg);
+        }
+        &:nth-child(2),
+        &:nth-child(4),
+        &:nth-child(5){
+            width: 40px;
+        }
+
+        // Move sheets into position
+        &:nth-child(1){
+            top: -7rem;
+            right: 3rem;
+        }
+        &:nth-child(2){
+            transform: rotate(-60deg);
+            top: 1.5rem;
+            left: 1.25rem;
+        }
+        &:nth-child(3){
+            width: 20px;
+            transform: rotate(-15deg);
+            top: 8rem;
+            right: 5rem;
+        }
+        &:nth-child(4){
+            bottom: 4rem;
+            left: 3rem;
+        }
+        &:nth-child(5){
+            transform: rotate(-30deg);
+            bottom: 0;
+            right: 5rem;
+        }
+        &:nth-child(6){
+            bottom: -5rem;
+            left: 3rem;
+        }
+    }
+    &__shape-small,
+    &__shape-big{
+        background-color: hsl(2, 100%, 88%);
+        position: absolute;
+        border-radius: 50%;
+        filter: blur(100px);
+    }
+    &__shape-small{
+        width: 200px;
+        height: 200px;
+        top: -5rem;
+        left: -5rem;
+    }
+    &__shape-big{
+        width: 250px;
+        height: 250px;
+        top: 17rem;
+        right: -8rem;
+    }
+    &__shape-bg{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        mix-blend-mode: soft-light;
+    }
+}
+
+/* Animation juice */
+@keyframes float-juice {
+    0% {
+        transform: translateY(0) rotate(15deg);
+      }
+    50% {
+        transform: translateY(-1.5rem) rotate(15deg);
+      }
+    100% {
+        transform: translateY(0) rotate(15deg);
+    }
+}
