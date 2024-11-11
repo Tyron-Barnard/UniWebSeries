@@ -1,0 +1,101 @@
+/*=============== HEADER & NAV ===============*/
+.header{
+   position: fixed;
+   width: 100%;
+   top: 0;
+   left: 0;
+   background-color: transparent;
+   z-index: var(--z-fixed);
+}
+
+.nav{
+   position: relative;
+   height: var(--header-height);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   &__logo{
+      display: inline-flex;
+      align-items: center;
+      column-gap: .25rem;
+      color: var(--white-color);
+      font-weight: var(--font-semi-bold);
+
+      & img{
+         width: 1.5rem;
+      }
+   }
+   &__toggle,
+   &__close{
+      display: inline-flex;
+      font-size: 1.5rem;
+      color: var(--white-color);
+      cursor: pointer;
+   }
+   &__menu{
+      position: fixed;
+      top: 0;
+      right: -100%;
+      background-color: hsla(238, 100%, 6%, .5);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      width: 80%;
+      height: 100%;
+      padding: 8rem 3.5rem 3.5rem;
+      transition: right .4s;
+   }
+   &__list{
+      display: flex;
+      flex-direction: column;
+      row-gap: 3rem;
+   }
+   &__link{
+      color: var(--white-color);
+      font-size: var(--h2-font-size);
+      font-family: var(--second-font);
+      transition: color .4s;
+
+      &:hover{
+         color: var(--first-color);
+      }
+   }
+   &__img,
+   &__close{
+      position: absolute;
+   }
+   &__close{
+      top: 1rem;
+      right: 1.5rem;
+   }
+   &__img{
+      width: 300px;
+      right: -3rem;
+      bottom: 5rem;
+      z-index: -1;
+   }
+}
+
+/* Show menu */
+.show-menu{
+   right: 0;
+}
+
+/* Add blur header */
+.blur-header::after{
+   content: "";
+   position: absolute;
+   width: 1000%;
+   height: 100%;
+   background-color: hsla(238, 100%, 6%, .5);
+   backdrop-filter: blur(16px);
+   -webkit-backdrop-filter: blur(16px);
+   top: 0;
+   left: 0;
+   z-index: -1;
+}
+
+/* Active link */
+.active-link{
+   color: var(--first-color);
+}

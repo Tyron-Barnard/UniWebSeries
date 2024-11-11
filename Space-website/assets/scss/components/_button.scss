@@ -1,0 +1,21 @@
+/*=============== BUTTON ===============*/
+.button{
+   display: inline-flex;
+   justify-content: center;
+   background: var(--first-gradient);
+   color: var(--white-color);
+   font-weight: var(--font-semi-bold);
+   padding: 1rem 2rem;
+   transition: box-shadow .4s;
+
+   &:hover{
+      box-shadow: 0 8px 32px hsla(243, 100%, 54%, .4);
+   }
+   &__yellow{
+      background: var(--third-gradient);
+
+      &:hover{
+         box-shadow: 0 8px 32px hsla(25, 96%, 55%, .4);
+      }
+   }
+}

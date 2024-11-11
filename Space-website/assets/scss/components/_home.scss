@@ -1,0 +1,56 @@
+/*=============== HOME ===============*/
+.home{
+   position: relative;
+
+   &__bg{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+   }
+   &__container{
+      position: relative;
+      row-gap: 3rem;
+      padding-top: 3rem;
+   }
+   &__data{
+      position: relative;
+      text-align: center;
+   }
+   &__title{
+      font-size: var(--biggest-font-size);
+      font-family: var(--second-font);
+      font-weight: initial;
+      margin-bottom: 1.5rem;
+
+      & span{
+         display: block;
+      }
+      & span:nth-child(1){
+         background: var(--third-gradient);
+         background-clip: text;
+         -webkit-background-clip: text;
+         color: transparent;
+      }
+      & span:nth-child(3){
+         background: var(--second-gradient);
+         background-clip: text;
+         -webkit-background-clip: text;
+         color: transparent;
+      }
+   }
+   &__ovni{
+      width: 50px;
+      position: absolute;
+      top: 4rem;
+      right: -1rem;
+      transform: rotateY(180deg);
+   }
+   &__img{
+      width: 320px;
+      justify-self: center;
+   }
+}

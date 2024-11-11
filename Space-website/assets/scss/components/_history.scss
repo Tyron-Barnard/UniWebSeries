@@ -1,0 +1,36 @@
+/*=============== HISTORY ===============*/
+.history{
+   position: relative;
+
+   &__container{
+      position: relative;
+      row-gap: 2.5rem;
+      grid-template-columns: 265px;
+      justify-content: center;
+   }
+   &__card{
+      text-align: center;
+   }
+   &__img{
+      width: 150px;
+      margin: 0 auto .75rem;
+   }
+   &__description span{
+      color: var(--first-color);
+      font-weight: var(--font-semi-bold);
+   }
+   &__planet-1,
+   &__planet-2{
+      position: absolute;
+   }
+   &__planet-1{
+      width: 250px;
+      top: 10rem;
+      left: -8rem;
+   }
+   &__planet-2{
+      width: 150px;
+      right: -5rem;
+      bottom: 6rem;
+   }
+}

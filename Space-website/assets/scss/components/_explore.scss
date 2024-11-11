@@ -1,0 +1,44 @@
+/*=============== EXPLORE ===============*/
+.explore{
+   &__container{
+      row-gap: 3rem;
+   }
+   &__data{
+      position: relative;
+   }
+   &__planet{
+      width: 50px;
+      position: absolute;
+      top: 3rem;
+      right: 0;
+   }
+   &__description{
+      text-align: center;
+      margin-bottom: 2rem;
+   }
+   &__info{
+      display: flex;
+      justify-content: center;
+      column-gap: 3rem;
+
+      &-title{
+         font-size: var(--normal-font-size);
+      }
+      &-number{
+         font-size: var(--h1-font-size);
+         font-family: var(--second-font);
+         background: var(--second-gradient);
+         background-clip: text;
+         -webkit-background-clip: text;
+         color: transparent;
+
+         & span{
+            font-size: var(--small-font-size);
+         }
+      }
+   }
+   &__img{
+      width: 320px;
+      justify-self: center;
+   }
+}

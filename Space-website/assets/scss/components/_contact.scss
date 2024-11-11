@@ -1,0 +1,20 @@
+/*=============== CONTACT ===============*/
+.contact{
+   &__container{
+      padding-bottom: 2rem;
+   }
+   &__form{
+      display: grid;
+      row-gap: 1rem;
+   }
+   &__input{
+      width: 100%;
+      background-color: var(--body-color);
+      border: 2px solid var(--border-color);
+      padding: 1rem;
+      color: var(--white-color);
+   }
+   &__form button{
+      cursor: pointer;
+   }
+}
