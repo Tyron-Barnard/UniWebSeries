@@ -10,7 +10,7 @@ An illuminating landing page for a lighting or home decor brand, designed to sho
 - Elegant and warm design to highlight ambiance and style
 
 ## Live Demo
-[Visit the Lamp Website](https://yourwebsite.com)
+[Visit the Lamp Website](https://glittering-tulumba-d06150.netlify.app/)
 
 ## How to View Locally
 1. Clone this repository and navigate to the `Lamp-website` folder.
