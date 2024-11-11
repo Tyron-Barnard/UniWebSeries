@@ -1,0 +1,324 @@
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 330px){
+   .container{
+      margin-inline: 1rem;
+   }
+
+   .home{
+      &__title{
+         font-size: 2.5rem;
+      }
+      &__burger{
+         width: 210px;
+      }
+      &__dish{
+         width: 250px;
+         bottom: -2rem;
+      }
+   }
+
+   .recipe{
+      &__container{
+         column-gap: 5rem;
+      }
+      &__img{
+         left: -8rem;
+      }
+   }
+
+   .popular__container{
+      grid-template-columns: 160px;
+      justify-content: center;
+   }
+
+   .footer{
+      &__social{
+         grid-column: 1;
+      }
+      &__content{
+         grid-template-columns: 1fr;
+         justify-items: center;
+      }
+   }
+}
+
+/* For medium devices */
+@media screen and (min-width: 540px){
+   .home__container,
+   .delivery__container{
+      grid-template-columns: 360px;
+      justify-content: center;
+   }
+      
+   .recipe{
+      &__img{
+         position: initial;
+      }
+      &__container{
+         grid-template-columns: 200px 230px;
+         justify-content: center;
+         column-gap: 3rem;
+      }
+   }
+
+   .popular__container{
+      grid-template-columns: repeat(2, 160px);
+      justify-content: center;
+   }
+
+   .contact{
+      max-width: 500px;
+      margin: 0 auto;
+   }
+}
+
+@media screen and (min-width: 768px){
+   .popular__container{
+      grid-template-columns: repeat(3, 160px);
+   }
+
+   .footer{
+      &__social{
+         grid-column: initial;
+      }
+      &__content{
+         grid-template-columns: repeat(3, 1fr);
+         align-items: center;
+      }
+      &__link:nth-child(1){
+         justify-self: start;
+      }
+      &__link:nth-child(2){
+         order: 2;
+         justify-self: end;
+      }
+   }
+}
+
+/* For large devices */
+@media screen and (min-width: 1150px){
+   .container{
+      margin-inline: auto;
+   }
+
+   .section{
+      padding-block: 7rem 2rem;
+
+      &__title{
+         margin-bottom: 4.5rem;
+      }
+   }
+
+   .nav{
+      height: calc(var(--header-height) + 2rem);
+
+      &__toggle,
+      &__close{
+         display: none;
+      }
+      &__list{
+         flex-direction: row;
+         column-gap: 4rem;
+      }
+   }
+
+   .home{
+      &__container{
+         grid-template-columns: 430px 605px;
+         align-items: center;
+         column-gap: 4rem;
+         padding-block: 7rem 4rem;
+      }
+      &__data{
+         text-align: initial;
+      }
+      &__description{
+         margin-bottom: 3.5rem;
+         padding-right: 3rem;
+      }
+      &__sticker{
+         width: 60px;
+         right: 10rem;
+         bottom: 1rem;
+      }
+      &__burger{
+         width: 490px;
+      }
+      &__dish{
+         width: 560px;
+         bottom: -4rem;
+      }
+      &__ingredient{
+         width: 100px;
+      }
+      &__potato-1{
+         left: -2rem;
+         top: 1.5rem;
+      }  
+      &__potato-2{
+         right: -1.5rem;
+         bottom: -3rem;
+      }
+      &__tomato-1{
+         width: 70px;
+         top: -1.5rem;
+         right: 10rem;
+      }
+      &__tomato-2{
+         width: 70px;
+         left: 9.5rem;
+         bottom: -2.5rem;
+      }
+      &__lettuce-1{
+         top: 4rem;
+         right: -3.5rem;
+      }
+      &__lettuce-2{
+         left: -3.5rem;
+         bottom: 2rem;
+      }
+   }
+
+   .recipe{
+      &__container{
+         grid-template-columns: 350px 300px;
+         column-gap: 8rem;
+         padding-bottom: 3rem;
+      }
+      &__img{
+         width: 350px;
+      }
+      &__card{
+         column-gap: 1rem;
+      }
+      &__box{
+         width: 100px;
+         height: 100px;
+         border-radius: 1.25rem;
+         border-width: 5px;
+
+         & img{
+            width: 85px;
+         }
+      }
+      &__title{
+         font-size: var(--h3-font-size);
+      }
+      &__description{
+         font-size: var(--normal-font-size);
+      }
+   }
+
+   .popular{
+      &__container{
+         grid-template-columns: repeat(3, 250px);
+         gap: 6.5rem 4rem;
+         padding-block: 3rem;
+      }
+      &__card{
+         padding: 9.5rem 1.25rem 1.25rem;
+         border-radius: 2rem;
+         border-width: 6px;
+      }
+      &__img{
+         width: 200px;
+         top: -3.5rem;
+      }
+      &__title{
+         font-size: var(--h2-font-size);
+      }
+      &__price{
+         font-size: var(--h1-font-size);
+      }
+      &__button{
+         font-size: 1.5rem;
+         right: 1.25rem;
+         bottom: 1.25rem;
+      }
+   }
+
+   .delivery{
+      &__container{
+         grid-template-columns: 440px 550px;
+         column-gap: 4rem;
+         align-items: center;
+         padding-block: 1rem;
+      }
+      &__container .section__title,
+      &__data{
+         text-align: initial;
+      }
+      &__description{
+         margin-bottom: 3.5rem;
+      }
+      &__sticker{
+         width: 50px;
+         right: 8rem;
+         bottom: 0;
+      }
+      &__img{
+         width: 550px;
+      }
+   }
+
+   .contact{
+      max-width: initial;
+
+      &__container{
+         border-radius: 4rem;
+         padding-block: 4rem 6.5rem;
+      }
+      &__content{
+         grid-template-columns: 420px 435px;
+         justify-content: center;
+         column-gap: 6.5rem;
+      }
+      &__data{
+         grid-template-columns: repeat(2, max-content);
+         text-align: initial;
+         gap: 4.5rem 2rem;
+         order: 1;
+      }
+      &__social{
+         justify-content: initial;
+      }
+      &__title{
+         margin-bottom: 1rem;
+      }
+      &__image{
+         position: relative;
+         width: 100%;
+      }
+      &__img{
+         width: 420px;
+         position: absolute;
+         top: -2.5rem;
+      }
+      &__sticker-1{
+         width: 70px;
+         left: 27rem;
+         top: 10rem;
+      }
+      &__sticker-2{
+         width: 40px;
+         right: 10rem;
+         bottom: 5.5rem;
+      }
+   }
+
+   .footer{
+      padding-block: 5rem 3rem;
+
+      &__container{
+         row-gap: 3.5rem;
+      }
+      &__copy{
+         margin-top: 4rem;
+      }
+   }
+
+   .scrollup{
+      right: 3rem;
+   }
+}

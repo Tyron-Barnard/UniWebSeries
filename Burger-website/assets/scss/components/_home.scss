@@ -1,0 +1,81 @@
+/*=============== HOME ===============*/
+.home{
+   &__container{
+      padding-block: 3rem 2rem;
+      justify-content: center;
+      row-gap: 3.5rem;
+   }
+   &__data{
+      position: relative;
+      text-align: center;
+   }
+   &__title{
+      font-size: var(--biggest-font-size);
+      margin-bottom: 1rem;
+   }
+   &__description{
+      margin-bottom: 2.5rem;
+   }
+   &__sticker{
+      width: 40px;
+      rotate: 15deg;
+      position: absolute;
+      bottom: 2rem;
+      right: 1rem;
+      opacity: .5;
+   }
+   &__images{
+      position: relative;
+      display: grid;
+      justify-items: center;
+      justify-self: center;
+   }
+   &__ingredient{
+      width: 60px;
+      filter: var(--shadow-small-img);
+      position: absolute;
+      z-index: 2;
+   }
+   &__burger,
+   &__dish{
+      filter: var(--shadow-big-img);
+   }
+   &__burger{
+      width: 280px;
+      z-index: 2;
+   }
+   &__dish{
+      max-width: initial;
+      width: 320px;
+      position: absolute;
+      bottom: -2.5rem;
+   }
+   &__potato-1{
+      left: -1rem;
+      top: .75rem;
+   }
+   &__potato-2{
+      right: -.75rem;
+      bottom: -2rem;
+      rotate: 90deg;
+   }
+   &__tomato-1{
+      width: 40px;
+      top: -1rem;
+      right: 6rem;
+   }
+   &__tomato-2{
+      width: 40px;
+      left: 5.5rem;
+      bottom: -1.5rem;
+   }
+   &__lettuce-1{
+      top: 2.5rem;
+      right: -2rem;
+      transform: scaleX(-1);
+   }
+   &__lettuce-2{
+      left: -2rem;
+      bottom: 1rem;
+   }
+}
