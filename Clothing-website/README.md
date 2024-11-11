@@ -10,7 +10,7 @@ A trendy and modern landing page for a fashion brand or boutique, designed to sh
 - Stylish and minimalist design to highlight fashion products
 
 ## Live Demo
-[Visit the Clothing Website](https://yourwebsite.com)
+[Visit the Clothing Website](https://flourishing-custard-8ec380.netlify.app/)
 
 ## How to View Locally
 1. Clone this repository and navigate to the `Clothing-website` folder.
