@@ -10,7 +10,7 @@ A unique and stylish landing page for showcasing personal work and creative proj
 - Modern and visually engaging design to highlight individuality
 
 ## Live Demo
-[Visit the Portfolio Website 2](https://yourwebsite.com)
+[Visit the Portfolio Website 2](https://vocal-palmier-542923.netlify.app/)
 
 ## How to View Locally
 1. Clone this repository and navigate to the `Portfolio-website-2` folder.
