@@ -1,0 +1,18 @@
+/*=============== BUTTON ===============*/
+.button{
+   display: inline-block;
+   background: var(--third-gradient);
+   padding: .75rem 1.8rem;
+   border-radius: 4rem;
+   color: var(--white-color);
+   
+   &, &__link{
+      font-weight: var(--font-medium);
+   }
+
+   &__link{
+      display: flex;
+      align-items: center;
+      column-gap: .25rem;
+   }
+}
