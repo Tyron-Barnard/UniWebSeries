@@ -10,7 +10,7 @@ A stylish and dynamic landing page for an e-commerce sneaker store, designed to 
 - Modern and bold design to appeal to sneaker enthusiasts
 
 ## Live Demo
-[Visit the E-commerce Sneaker Website](https://yourwebsite.com)
+[Visit the E-commerce Sneaker Website](https://darling-pudding-9d76f7.netlify.app/)
 
 ## How to View Locally
 1. Clone this repository and navigate to the `Ecommerce-sneaker-website` folder.
