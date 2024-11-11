@@ -10,7 +10,7 @@ A high-energy landing page for a gym or fitness center, designed to showcase wor
 - Bold and dynamic design to inspire fitness and wellness
 
 ## Live Demo
-[Visit the Gym Website](https://yourwebsite.com)
+[Visit the Gym Website](https://jade-yeot-adb28d.netlify.app/)
 
 ## How to View Locally
 1. Clone this repository and navigate to the `Gym-website` folder.
