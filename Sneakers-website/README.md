@@ -10,7 +10,7 @@ A bold and trendy landing page for a sneaker brand, designed to showcase popular
 - Stylish and modern design to appeal to the sneaker culture
 
 ## Live Demo
-[Visit the Sneaker Website](https://yourwebsite.com)
+[Visit the Sneaker Website](https://joyful-fudge-f698e4.netlify.app/)
 
 ## How to View Locally
 1. Clone this repository and navigate to the `Sneaker-website` folder.
