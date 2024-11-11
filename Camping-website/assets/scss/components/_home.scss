@@ -1,0 +1,65 @@
+/*=============== HOME ===============*/
+.home{
+   position: relative;
+
+   &__container{
+      padding-top: 8rem;
+      height: 100vh;
+      // height: 745px; // Uncomment, if you want this measure 
+   }
+   &__content{
+      position: relative;
+      z-index: 2;
+   }
+   &__data{
+      display: grid;
+      row-gap: .5rem;
+   }
+   &__subtitle{
+      font-size: var(--small-font-size);
+      color: var(--first-color);
+      letter-spacing: 3px;
+   }
+   &__title{
+      font-size: var(--biggest-font-size);
+      font-family: var(--second-font);
+      color: var(--title-color);
+   }
+   &__description{
+      margin-bottom: 2.5rem;
+   }
+   &__button{
+      display: inline-block;
+      background: var(--gradient-color);
+      color: var(--white-color);
+      width: max-content;
+      padding: 1rem 2rem;
+      border-radius: .75rem;
+      box-shadow: 0 24px 32px hsla(210, 54%, 24%, .3);
+   }
+   &__bird-1,
+   &__bird-2{
+      position: absolute;
+      width: 60px;
+   }
+   &__bird-1{
+      bottom: -6rem;
+      rotate: (-30deg);
+   }
+   &__bird-2{
+      top: 4.5rem;
+      right: 0;
+      rotate: (-15deg);
+   }
+   &__images{
+      z-index: 1;
+
+      & img{
+         position: absolute;
+         max-width: initial;
+         width: 600px;
+         left: -7rem;
+         bottom: 0;
+      }
+   }
+}

@@ -1,0 +1,137 @@
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 305px){
+   .container{
+      margin-inline: 1rem;
+   }
+
+   .home__title{
+      font-size: 2rem;
+   }
+}
+/* For taller devices */
+@media screen and (min-width: 376px) and (min-height: 800px){
+   .home{
+      &__container{
+         padding-top: 10rem;
+      }
+      &__images img{
+         width: 700px;
+         left: -12rem;
+      }
+   }
+}
+
+/* For medium devices */
+@media screen and (min-width: 480px){
+   .home{
+      &__content{
+         max-width: 305px;
+      }
+      &__bird-2{
+         right: -3rem;
+      }
+      &__images img{
+         width: initial;
+         left: 0;
+      }
+   }
+}
+
+/* For large devices */
+@media screen and (min-width: 1023px){
+   .nav{
+      height: calc(var(--header-height) + 2rem);
+      column-gap: 4rem;
+
+      &__toggle,
+      &__close{
+         display: none;
+      }
+      &__menu{
+         width: 100%;
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+      }
+      &__list{
+         flex-direction: row;
+         column-gap: 5rem;
+      }
+      &__buttons{
+         flex-direction: row;
+         column-gap: 3rem;
+      }
+      &__logo{
+         width: 48px;
+      }
+   }
+
+   .home{
+      &__content{
+         max-width: 550px;
+      }
+      &__data{
+         row-gap: 1rem;
+      }
+      &__subtitle{
+         font-size: var(--normal-font-size);
+      }
+      &__description{
+         margin-bottom: 3rem;
+      }
+   }
+}
+
+@media screen and (min-width: 1120px){
+   .container{
+      margin-inline: auto;
+   }
+}
+
+@media screen and (min-width: 1300px){
+   .home{
+      &__container{
+         height: 950px;
+         padding-top: 10rem;
+      }
+      &__bird-1,
+      &__bird-2{
+         width: 80px;
+      }
+      &__bird-1{
+         bottom: -7rem;
+         left: -7rem;
+      }
+      &__bird-2{
+         top: 0;
+         right: -6rem;
+      }
+      &__images img{
+         bottom: -3rem;
+      }
+   }
+
+   ::-webkit-scrollbar{
+      width: .6rem;
+      border-radius: .5rem;
+      background-color: hsl(220, 24%, 15%);
+      
+      &-thumb{
+         background-color: hsl(220, 24%, 25%);
+         border-radius: .5rem;
+      }
+   }
+}
+
+/* For 2K resolutions (2048 x 1152) */
+@media screen and (min-width: 2048px){
+   .container{
+      max-width: 1300px;
+   }
+   
+   .home__container{
+      height: 1200px;
+      padding-top: 15rem;
+   }
+}
