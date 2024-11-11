@@ -10,7 +10,7 @@ A vibrant and fresh landing page for a juice or smoothie brand, designed to show
 - Bright and colorful design to promote a healthy lifestyle
 
 ## Live Demo
-[Visit the Juice Website](https://yourwebsite.com)
+[Visit the Juice Website](https://chimerical-pasca-e496aa.netlify.app/)
 
 ## How to View Locally
 1. Clone this repository and navigate to the `Juice-website` folder.
